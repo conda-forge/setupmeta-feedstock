@@ -1,18 +1,18 @@
 {% set name = "setupmeta" %}
-{% set version = "2.7.8" %}
+{% set version = "2.7.9" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 48b8dbbdd8b85a8cc76b9bfe557d538384cfe1de1ef5112e54400f3bed49456c
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 8351e2519144656f95eaca6c590af4f4d881016d9b3330aa4c06edfcef7e25dd
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -27,11 +27,11 @@ test:
     - setupmeta
 
 about:
-  home: "https://github.com/zsimic/setupmeta"
+  home: https://github.com/zsimic/setupmeta
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: "Simplify your setup.py"
+  summary: Simplify your setup.py
   description: |
     Writing a setup.py typically involves lots of boilerplate and copy-pasting from project to project.
     This package aims to simplify that and bring some DRY principle to python packaging. For more
@@ -39,8 +39,8 @@ about:
     This package is only required to enable the building of Conda Python packages that
     make use of setupmeta (which is otherwise ordinarily installed dynamically
     as part of the setup.py workflows).
-  doc_url: "https://github.com/zsimic/setupmeta"
-  dev_url: "https://github.com/zsimic/setupmeta"
+  doc_url: https://github.com/zsimic/setupmeta
+  dev_url: https://github.com/zsimic/setupmeta
 
 extra:
   recipe-maintainers:
