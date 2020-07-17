@@ -5,7 +5,7 @@ Home: https://github.com/zsimic/setupmeta
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Simplify your setup.py
 
