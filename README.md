@@ -5,9 +5,13 @@ Home: https://github.com/zsimic/setupmeta
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/setupmeta-feedstock/blob/master/LICENSE.txt)
 
 Summary: Simplify your setup.py
+
+Development: https://github.com/zsimic/setupmeta
+
+Documentation: https://github.com/zsimic/setupmeta
 
 Writing a setup.py typically involves lots of boilerplate and copy-pasting from project to project.
 This package aims to simplify that and bring some DRY principle to python packaging. For more
