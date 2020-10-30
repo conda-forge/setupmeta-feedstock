@@ -11,13 +11,13 @@ source:
 
 build:
   number: 0
-  noarch: python
+  noarch: python >=2.7
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=2.7
+    - python
   run:
     - python
     - setuptools
