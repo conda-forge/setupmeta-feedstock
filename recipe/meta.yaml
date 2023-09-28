@@ -10,7 +10,7 @@ source:
   sha256: ec6536448e32bbbea9efa5e8f5644f22d54f3384972bb716b8be20e5c41b9666
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -27,7 +27,7 @@ test:
     - setupmeta
 
 about:
-  home: https://github.com/zsimic/setupmeta
+  home: https://github.com/codrsquad/setupmeta
   license: MIT
   license_family: MIT
   license_file: LICENSE
@@ -39,8 +39,8 @@ about:
     This package is only required to enable the building of Conda Python packages that
     make use of setupmeta (which is otherwise ordinarily installed dynamically
     as part of the setup.py workflows).
-  doc_url: https://github.com/zsimic/setupmeta
-  dev_url: https://github.com/zsimic/setupmeta
+  doc_url: https://github.com/codrsquad/setupmeta
+  dev_url: https://github.com/codrsquad/setupmeta
 
 extra:
   recipe-maintainers:
