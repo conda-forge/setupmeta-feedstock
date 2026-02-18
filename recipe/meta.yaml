@@ -1,5 +1,5 @@
 {% set name = "setupmeta" %}
-{% set version = "3.8.0" %}
+{% set version = "3.9.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f13d6e3c4a5f1bbf06e41920eab36c05fd1de54cadb629f3a4d069e24a6503a1
+  sha256: c1719697ac8407dd84018f5699121cdb4ec70bde28263b665a35e36f108aac29
 
 build:
   number: 0
